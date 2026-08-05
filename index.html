@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espyr Cloud - هاستینگ حرفه‌ای</title>
+    <!-- لود صحیح کیت آیکون فونت‌آوسم برای دکمه همبرگری موبایل -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <!-- اتصال به استایل بهینه‌شده و ۱۰۰٪ ریسپانسیو -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+    <!-- ۱. هدر سایت (Navbar) کاملاً مستقل -->
+    <header class="navbar">
+        <div class="nav-right">
+            <!-- بازگشت کامل نوشته اصلی لوگو به حالت قبل مطابق دستور شما -->
+            <div class="logo">
+                ESPYR CLOUD
+            </div>
+            
+            <!-- دکمه همبرگری موبایل -->
+            <button class="menu-toggle" id="mobile-menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <nav class="menu" id="nav-menu-links">
+                <a href="shared-host.html">هاست</a>
+                <a href="vps.html">سرور مجازی</a>
+                <a href="dedicated.html">سرور اختصاصی</a>
+                <a href="colocation.html">کولوکیشن</a>
+                <a href="domain.html">ثبت دامنه</a>
+                <a href="aboutus.html">درباره ما</a>
+                <a href="#">تماس با ما</a>
+            </nav>
+        </div>
+        <div class="nav-left">
+            <button class="btn-register">ثبت نام</button>
+            <button class="btn-login">ورود به پنل</button>
+        </div>
+    </header>
+
+    <!-- ۲. بخش معرفی اصلی (Hero Section) -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>سرعت، امنیت، پایداری <br><span>هاستینگ حرفه‌ای برای شما</span></h1>
+            <p>ارائه خدمات هاستینگ، سرور مجازی و اختصاصی با سخت‌افزار قدرتمند و شبکه پرسرعت در دیتاسنترهای داخلی و خارجی.</p>
+            
+            <!-- دکمه‌های متنی ساده و شیک بدون هیچ مربع یا آیکون اضافه -->
+            <div class="hero-buttons">
+                <button class="btn-hero-blue" id="hero-view-plans">مشاهده پلن‌ها</button>
+                <button class="btn-hero-outline">مشاوره رایگان</button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="hero-glow"></div>
+            <img src="./assets/images/server1.png" alt="Server" class="server-main-image">
+        </div>
+    </section>
+
+    <!-- ۳. کانتینر ۵ کارت قیمت‌گذاری داینامیک متصل به جاوا اسکریپت -->
+    <section class="pricing-container" id="pricing-cards"></section>
+
+    <!-- ۴. بخش ویژگی‌های ۶ گانه مستقل و تراز شده با کارت‌های بالا -->
+    <section class="features-grid">
+        <div class="feat-item">
+            <div class="feat-icon-box">
+                <img src="./assets/images/index/datacenter.svg" alt="دیتاسنتر" class="feat-svg-icon">
+            </div>
+            <div class="feat-content">
+                <h4>دیتاسنترهای معتبر</h4>
+                <p>ایران، آلمان، فرانسه، ترکیه و سایر کشورها</p>
+            </div>
+        </div>
+
+        <div class="feat-item">
+            <div class="feat-icon-box">
+                <img src="./assets/images/index/backup.svg" alt="بکاپ" class="feat-svg-icon">
+            </div>
+            <div class="feat-content">
+                <h4>بکاپ منظم</h4>
+                <p>بکاپ روزانه از اطلاعات روی سرورهای مجزا</p>
+            </div>
+        </div>
+
+        <div class="feat-item">
+            <div class="feat-icon-box">
+                <img src="./assets/images/index/uptime.svg" alt="آپتایم" class="feat-svg-icon">
+            </div>
+            <div class="feat-content">
+                <h4>99.9% آپتایم</h4>
+                <p>ضمانت آپتایم شبکه و دیتاسنترها</p>
+            </div>
+        </div>
+
+        <div class="feat-item">
+            <div class="feat-icon-box">
+                <img src="./assets/images/index/speed.svg" alt="سرعت" class="feat-svg-icon">
+            </div>
+            <div class="feat-content">
+                <h4>سرعت فوق‌العاده</h4>
+                <p>استفاده از NVMe SSD و شبکه پرسرعت</p>
+            </div>
+        </div>
+
+        <div class="feat-item">
+            <div class="feat-icon-box">
+                <img src="./assets/images/index/security.svg" alt="امنیت" class="feat-svg-icon">
+            </div>
+            <div class="feat-content">
+                <h4>امنیت بالا</h4>
+                <p>فایروال پیشرفته و مانیتورینگ 24 ساعته</p>
+            </div>
+        </div>
+
+        <div class="feat-item">
+            <div class="feat-icon-box">
+                <img src="./assets/images/index/support.svg" alt="پشتیبانی" class="feat-svg-icon">
+            </div>
+            <div class="feat-content">
+                <h4>پشتیبانی 24/7</h4>
+                <p>پاسخگویی سریع در تمام روزهای هفته</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ۵. فوتر مدرن ۳ باکسه تفکیک‌شده -->
+    <footer class="site-footer">
+        <div class="footer-box cta-box">
+            <h4>همین حالا شروع کنید!</h4>
+            <p>کسب‌وکار خود را با زیرساخت قدرتمند ما متحول کنید.</p>
+            <button class="btn-cta">ثبت‌نام رایگان</button>
+        </div>
+
+        <div class="footer-box stats-box">
+            <div class="stat"><span class="num">+10,000</span><span class="lbl">مشتری فعال</span></div>
+            <div class="stat"><span class="num">+99.9%</span><span class="lbl">آپتایم شبکه</span></div>
+            <div class="stat"><span class="num">+8</span><span class="lbl">دیتاسنتر فعال</span></div>
+            <div class="stat"><span class="num">+5</span><span class="lbl">سال سابقه</span></div>
+        </div>
+
+        <div class="footer-box brands-box">
+            <span>مشتریان و همراهان ما</span>
+            <div class="brands-list">
+                <span class="brand-mock">digikala</span>
+                <span class="brand-mock">
+                    <img src="./assets/images/index/irancell.svg" alt="Irancell" class="brand-svg-icon"> ایرانسل
+                </span>
+                <span class="brand-mock">Snapp!</span>
+                <span class="brand-mock">
+                    <img src="./assets/images/index/aparat.svg" alt="Aparat" class="brand-svg-icon"> آپارات
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <div class="bottom-bar">
+        <p>کلیه حقوق این وبسایت متعلق به Espyr Cloud می‌باشد.</p>
+        <div class="footer-status-indicator">
+            <span class="status-dot"></span> وضعیت سرورها: سالم
+        </div>
+    </div>
+
+    <!-- اسکریپت باز و بسته کردن منوی موبایل -->
+    <script>
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const menuLinks = document.getElementById('nav-menu-links');
+        if(menuBtn && menuLinks) {
+            menuBtn.addEventListener('click', () => {
+                menuLinks.classList.toggle('active');
+            });
+        }
+    </script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
