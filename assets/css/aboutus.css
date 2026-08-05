@@ -1,0 +1,332 @@
+/* 
+=========================================================================
+= SERVICES OTHER / ABOUTUS FOR STYLE (کاملاً منطبق بر فواصل دسکتاپ index)
+========================================================================= */
+
+* { 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+    font-family: Tahoma, sans-serif; 
+}
+
+body {
+    background-color: #f8fafc;
+    direction: rtl;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px 80px; /* تنظیم پدینگ بدنه بر اساس فواصل دقیق صفحه index شما */
+}
+
+/* هدر قالب */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.nav-right, .nav-left { 
+    display: flex; 
+    align-items: center; 
+    gap: 30px; 
+}
+
+/* استایل کپی‌برابر‌اصل و بدون آیکون لوگو دقیقاً بر اساس فرمول درخواستی شما */
+.logo { 
+    font-weight: 800; 
+    color: #0052cc; 
+    font-size: 20px; 
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.menu { 
+    display: flex; 
+    gap: 20px; 
+}
+
+.menu a { 
+    text-decoration: none; 
+    color: #475569; 
+    font-size: 13px;
+    font-weight: bold; 
+    transition: 0.2s; 
+}
+
+.menu a:hover, .menu a.active { 
+    color: #0052cc !important; 
+}
+
+.btn-login { 
+    background: #0052cc; 
+    color: white; 
+    border: none; 
+    padding: 8px 18px; 
+    border-radius: 6px; 
+    cursor: pointer; 
+    font-size: 12px; 
+    font-weight: bold; 
+}
+
+.btn-register { 
+    background: none; 
+    border: none; 
+    color: #475569; 
+    cursor: pointer; 
+    font-size: 12px; 
+    margin-left: 10px; 
+    font-weight: bold; 
+}
+
+/* مسیر راهنما */
+.breadcrumb {
+    font-size: 11px;
+    color: #94a3b8;
+    text-align: right;
+    padding: 10px 0 0 0 !important;
+    font-weight: bold;
+    margin-bottom: -10px;
+}
+
+.breadcrumb a { 
+    text-decoration: none; 
+    color: #94a3b8; 
+    transition: color 0.2s; 
+}
+
+.breadcrumb a:hover { 
+    color: #1455d9; 
+}
+
+/* بخش هیرو اختصاصی */
+.hero-aboutus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 350px;
+    background-color: #f8fafc;
+    gap: 40px;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.hero-text-aboutus {
+    width: 50%;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    padding-right: 0 !important;
+    margin-right: 0 !important;
+}
+
+.hero-text-aboutus h1 {
+    font-size: 42px;
+    font-weight: 800;
+    color: #0f172a;
+    line-height: 1.2;
+}
+
+.hero-text-aboutus .sub-title-blue {
+    color: #1455d9;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 5px;
+    line-height: 1.3;
+}
+
+.hero-text-aboutus p {
+    margin-top: 15px;
+    max-width: 480px;
+    line-height: 1.8;
+    font-size: 14px;
+    color: #64748b;
+}
+
+.hero-image-aboutus {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image-aboutus img {
+    width: 100%;
+    max-width: 380px;
+    height: auto;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+}
+
+/* کانتینر گرید ۸ تایی خدمات فرعی */
+.services-grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 20px;
+    width: 100%;
+    max-width: 1160px;
+    margin: 10px auto 40px auto;
+}
+
+.service-item-card {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 25px 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.01);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 240px;
+    transition: all 0.3s ease;
+}
+
+.service-item-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.03);
+}
+
+/* استایل و کنترل ابعاد آیکون تصویری جدید SVG در دسکتاپ */
+.service-item-card .service-item-icon {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 12px auto;
+}
+
+.service-item-card h3 {
+    font-size: 15px;
+    font-weight: bold;
+    color: #0f172a;
+    margin-bottom: 6px;
+}
+
+.service-item-card p {
+    font-size: 11px;
+    color: #94a3b8;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.service-price-info {
+    margin-bottom: 12px;
+    font-size: 12px;
+    color: #475569;
+}
+
+.service-price-info strong {
+    color: #0f172a;
+    font-size: 14px;
+}
+
+.btn-view-service {
+    color: #1455d9;
+    background: none;
+    border: none;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+    text-decoration: none;
+}
+
+.btn-view-service:hover {
+    color: #003d99;
+    text-decoration: underline;
+}
+
+/* =========================================================================
+=                       تنظیمات کاملاً ریسپانسیو موبایل                     =
+========================================================================= */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 15px 15px !important;
+        gap: 20px !important;
+    }
+
+    .navbar {
+        height: auto !important;
+        flex-direction: column !important;
+        gap: 15px !important;
+        text-align: center !important;
+    }
+    .nav-right {
+        flex-direction: column !important;
+        gap: 15px !important;
+        width: 100% !important;
+    }
+    .menu {
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 12px 18px !important;
+    }
+    .nav-left {
+        width: 100% !important;
+        justify-content: center !important;
+        gap: 15px !important;
+    }
+    .btn-register {
+        margin-left: 0 !important;
+    }
+
+    .breadcrumb {
+        text-align: center !important;
+        margin-bottom: 0 !important;
+    }
+
+    .hero-aboutus {
+        flex-direction: column-reverse !important;
+        text-align: center !important;
+        gap: 25px !important;
+        min-height: auto !important;
+    }
+    .hero-text-aboutus {
+        width: 100% !important;
+        text-align: center !important;
+        align-items: center !important;
+    }
+    .hero-text-aboutus h1 {
+        font-size: 28px !important;
+    }
+    .hero-text-aboutus .sub-title-blue {
+        font-size: 18px !important;
+    }
+    .hero-text-aboutus p {
+        font-size: 13px !important;
+        max-width: 100% !important;
+        margin-top: 10px !important;
+    }
+    .hero-image-aboutus {
+        width: 100% !important;
+    }
+    .hero-image-aboutus img {
+        max-width: 260px !important;
+    }
+
+    .services-grid-container {
+        grid-template-columns: 1fr !important;
+        gap: 15px !important;
+        padding: 0 10px !important;
+        margin-bottom: 20px !important;
+    }
+
+    .service-item-card {
+        min-height: auto !important;
+        padding: 20px !important;
+        width: 100% !important;
+        max-width: 320px !important;
+        margin: 0 auto !important;
+    }
+    
+    .service-item-card .service-item-icon {
+        width: 40px !important;
+        height: 40px !important;
+        margin-bottom: 10px !important;
+    }
+}
