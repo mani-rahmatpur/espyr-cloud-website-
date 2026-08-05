@@ -1,0 +1,346 @@
+/* =========================================================================
+=                      MAIN WEBSITE STYLESHEET WITH SVG                     =
+========================================================================= */
+
+* { 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+    font-family: Tahoma, sans-serif; 
+}
+
+body {
+    background-color: #f8fafc;
+    direction: rtl;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding: 20px 80px;
+}
+
+/* هدر سایت */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    position: relative;
+}
+.nav-right, .nav-left { 
+    display: flex; 
+    align-items: center; 
+    gap: 30px; 
+}
+.logo { 
+    font-weight: 800; 
+    color: #0052cc; 
+    font-size: 20px; 
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+    display: inline-block;
+}
+/* تنظیم بهینه ابعاد عکس لوگوی متنی اختصاصی شما */
+.nav-logo-svg {
+    width: 140px;
+    height: 45px;
+    object-fit: contain;
+}
+.menu { 
+    display: flex; 
+    gap: 20px; 
+}
+.menu a { 
+    text-decoration: none; 
+    color: #475569; 
+    font-size: 13px; 
+    font-weight: bold; 
+    transition: color 0.2s;
+}
+.menu a:hover, .menu a.active {
+    color: #0052cc;
+}
+
+/* دکمه منوی موبایل */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #0052cc;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.btn-login { 
+    background: #0052cc; 
+    color: white; 
+    border: none; 
+    padding: 8px 18px; 
+    border-radius: 6px; 
+    cursor: pointer; 
+    font-size: 12px; 
+    font-weight: bold;
+}
+.btn-register { 
+    background: none; 
+    border: none; 
+    color: #475569; 
+    cursor: pointer; 
+    font-size: 12px; 
+    margin-left: 10px; 
+    font-weight: bold;
+}
+
+/* هیرو دسکتاپ */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    min-height: 430px;
+    margin-top: 20px;
+}
+.hero-text {
+    flex: 1;
+    text-align: right;
+}
+.hero-text h1 {
+    font-size: 42px;
+    line-height: 1.4;
+    color: #0f172a;
+    font-weight: 800;
+}
+.hero-text h1 span {
+    color: #0052cc;
+    display: block;
+}
+.hero-text p {
+    color: #64748b;
+    max-width: 520px;
+    font-size: 15px;
+    margin: 20px 0;
+    line-height: 1.8;
+}
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+.btn-hero-blue {
+    background: #0052cc; 
+    color: white; 
+    border: none; 
+    padding: 12px 30px; 
+    border-radius: 8px; 
+    font-size: 14px; 
+    font-weight: 600; 
+    cursor: pointer; 
+    transition: all 0.3s ease; 
+}
+.btn-hero-blue:hover {
+    background: #003d99; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0, 82, 204, 0.3);
+}
+.btn-hero-outline {
+    background: white; 
+    border: 1.5px solid #e2e8f0; 
+    color: #475569; 
+    padding: 12px 30px; 
+    border-radius: 8px; 
+    font-size: 14px; 
+    font-weight: 600; 
+    cursor: pointer; 
+    transition: all 0.3s ease; 
+}
+.btn-hero-outline:hover { border-color: #0052cc; color: #0052cc; transform: translateY(-2px); }
+
+.hero-image { flex: 0 0 520px; position: relative; display: flex; justify-content: center; align-items: center; }
+.server-main-image { width: 450px; height: auto; object-fit: contain; position: relative; z-index: 3; mix-blend-mode: multiply; }
+.hero-glow { position: absolute; width: 420px; height: 420px; border-radius: 50%; background: rgba(37, 99, 235, 0.08); filter: blur(90px); z-index: 1; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+
+/* کانتینر کارت‌های قیمت‌گذاری */
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 15px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 1160px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.card {
+    background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 25px 15px; flex: 1; max-width: 220px; text-align: center; position: relative; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 4px 6px rgba(0,0,0,0.01); transition: all 0.3s ease;
+}
+.card:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(0,0,0,0.08); }
+.card.featured { border: 2px solid #0052cc; box-shadow: 0 10px 25px rgba(0,82,204,0.08); }
+.badge { position: absolute; top: -11px; left: 50%; transform: translateX(-50%); background: #0052cc; color: white; padding: 2px 12px; font-size: 10px; border-radius: 20px; white-space: nowrap; font-weight: bold; }
+.service-icon {
+    width: 50px !important;
+    height: 50px !important;
+    object-fit: contain !important;
+    display: block !important;
+    margin: 0 auto 15px auto !important;
+}
+.card h3 { font-size: 14px; color: #1e293b; margin-bottom: 12px; font-weight: bold; }
+.price-box { margin-bottom: 15px; }
+.price-box .from { font-size: 10px; color: #94a3b8; display: block; margin-bottom: 2px; }
+.price-box .amount { font-size: 22px; font-weight: bold; color: #0f172a; }
+.price-box .period { font-size: 10px; color: #64748b; display: block; margin-top: 2px; }
+.features-list { list-style: none; margin: 10px 0; }
+.features-list li { font-size: 11px; color: #475569; margin: 8px 0; line-height: 1.6; }
+
+.btn-card { width: 100%; padding: 10px; border-radius: 6px; border: none; font-weight: bold; font-size: 11px; cursor: pointer; margin-top: 10px; transition: transform 0.3s; }
+.btn-card:hover { transform: scale(1.04); }
+.btn-orange { background: #ffede5; color: #f97316; }
+.btn-green { background: #e6f9ed; color: #22c55e; }
+.btn-blue { background: #0052cc; color: white; }
+.btn-purple { background: #f3e8ff; color: #a855f7; }
+.btn-outline-blue { background: white; border: 1px solid #cbd5e1; color: #0052cc; }
+
+/* بخش ویژگی‌های ۶ گانه دسکتاپ */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); gap: 15px; margin-top: 40px; direction: rtl; width: 100%; max-width: 1160px; margin-left: auto; margin-right: auto;
+}
+.feat-item { 
+    display: flex; align-items: center; gap: 12px; background: #ffffff; padding: 15px 10px; border-radius: 14px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02); border: 1px solid #e2e8f0;
+}
+.feat-icon-box { width: 38px; height: 38px; background: #e6f0ff; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.feat-svg-icon { width: 22px; height: 22px; object-fit: contain; }
+.feat-content { display: flex; flex-direction: column; text-align: right; gap: 2px; }
+.feat-item h4 { font-size: 12px; color: #1e293b; font-weight: bold; white-space: nowrap; }
+.feat-item p { font-size: 10px; color: #64748b; line-height: 1.4; }
+
+/* فوتر دسکتاپ */
+.site-footer {
+    display: grid; grid-template-columns: 1fr 1.2fr 1fr; gap: 15px; margin-top: 40px; direction: rtl; width: 100%; max-width: 1160px; margin-left: auto; margin-right: auto;
+}
+.footer-box { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 14px; padding: 20px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.01); display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 120px; }
+.cta-box { background: #e6f0ff !important; border: 1px solid #cbd5e1; text-align: center; gap: 4px; }
+.cta-box h4 { font-size: 13px; color: #0052cc; font-weight: bold; }
+.cta-box p { font-size: 10px; color: #64748b; }
+.btn-cta { background: #1455d9; color: white; border: none; padding: 8px 30px; border-radius: 25px; font-size: 11px; font-weight: bold; cursor: pointer; margin-top: 6px; display: flex; align-items: center; justify-content: center; gap: 6px; transition: 0.2s; }
+.btn-cta:hover { background: #003d99; transform: scale(1.02); }
+
+.stats-box { display: flex !important; flex-direction: row !important; justify-content: space-around !important; align-items: center !important; gap: 15px; }
+.stat { display: flex; flex-direction: column; align-items: center; gap: 4px; }
+.stat .num { font-size: 20px; font-weight: 800; color: #0052cc; }
+.stat .lbl { font-size: 10px; color: #64748b; }
+
+.brands-box { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 12px; }
+.brands-box span:first-child { font-size: 11px; color: #475569; font-weight: bold; }
+.brands-list { display: flex; gap: 15px; align-items: center; justify-content: center; }
+.brand-mock { font-size: 13px; font-weight: bold; color: #94a3b8; display: flex; align-items: center; gap: 5px; }
+.brand-svg-icon { width: 16px; height: 16px; object-fit: contain; }
+
+.bottom-bar { display: flex; justify-content: space-between; align-items: center; font-size: 11px; color: #94a3b8; border-top: 1px solid #e2e8f0; padding-top: 15px; margin-top: 25px; width: 100%; }
+.footer-status-indicator { display: flex; align-items: center; gap: 6px; color: #475569; font-weight: bold; }
+.status-dot { width: 8px; height: 8px; background-color: #22c55e; border-radius: 50%; display: inline-block; box-shadow: 0 0 8px #22c55e; }
+
+/* =========================================================================
+=   تنظیمات کاملاً ریسپانسیو و هم‌تراز کانتینری صفحه اصلی (مستطیل فرضی منظم) =
+========================================================================= */
+@media screen and (max-width: 768px) {
+    /* ۱. تنظیم فاصله کل اجزای بدنه سایت از چپ و راست */
+    body { 
+        padding: 15px 15px !important; 
+        gap: 25px !important; 
+    }
+    
+    /* ۲. تنظیم هدر و منوی همبرگری کشویی */
+    .navbar { height: auto !important; flex-direction: row !important; justify-content: space-between !important; width: 100% !important; padding: 10px 0 !important; }
+    .nav-right { gap: 15px !important; }
+    .nav-left { display: none !important; } 
+    .nav-logo-svg { width: 110px !important; height: 35px !important; }
+    .menu-toggle { display: block !important; }
+
+    .menu { 
+        display: none; position: absolute; top: 60px; right: 0; width: 100% !important; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; flex-direction: column; gap: 0; z-index: 100; box-shadow: 0 10px 15px rgba(0,0,0,0.05); padding: 10px 0;
+    }
+    .menu a { padding: 12px 20px; border-bottom: 1px solid #f1f5f9; width: 100%; text-align: right; }
+    .menu a:last-child { border-bottom: none; }
+    .menu.active { display: flex; }
+
+    /* ۳. تراز کردن بخش هیرو */
+    .hero { 
+        flex-direction: column-reverse !important; 
+        text-align: center !important; 
+        gap: 30px !important; 
+        min-height: auto !important; 
+        width: 100% !important;
+        margin: 0 !important;
+    }
+    .hero-text h1 { font-size: 28px !important; }
+    .hero-text h1 span { display: inline !important; }
+    .hero-text p { font-size: 13px !important; margin: 15px auto !important; max-width: 100% !important; }
+    .hero-buttons { justify-content: center !important; width: 100% !important; gap: 12px !important; }
+    .btn-hero-blue, .btn-hero-outline { width: 100% !important; padding: 12px 0 !important; border-radius: 8px !important; font-size: 13px !important; }
+    .hero-image { width: 100% !important; flex: 0 0 auto !important; }
+    .server-main-image { width: 100% !important; max-width: 260px !important; }
+    .hero-glow { width: 220px !important; height: 220px !important; }
+
+    /* ۴. هم‌تراز کردن دقیق ۵ کارت قیمت‌گذاری کپسولی */
+    .pricing-container { 
+        flex-direction: column !important; 
+        align-items: center !important; 
+        gap: 20px !important; 
+        padding: 0 !important; /* حذف پدینگ اضافی برای هم‌تراز شدن لبه‌ها */
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+    .card { 
+        width: 100% !important; 
+        max-width: 300px !important; /* فیکس شدن روی مستطیل فرضی میانی */
+    }
+
+    /* ۵. هم‌تراز کردن کامل ۶ باکس ویژگی زیرین با لبه کارت‌های بالا */
+    .features-grid { 
+        grid-template-columns: 1fr !important; 
+        gap: 15px !important; 
+        padding: 0 !important; /* صفر کردن پدینگ جهت هم‌ترازی مویی با کانتینر بالا */
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 40px auto 0 auto !important;
+    }
+    .feat-item { 
+        width: 100% !important; 
+        max-width: 300px !important; /* دقیقاً هم‌سایز با عرض کارت‌های قیمت‌گذاری بالا */
+        margin: 0 auto !important; 
+        padding: 15px !important; 
+    }
+    .feat-item h4 { font-size: 14px; white-space: normal; }
+
+    /* ۶. هم‌تراز کردن باکس‌های فوتر انتهای صفحه */
+    .site-footer { 
+        grid-template-columns: 1fr !important; 
+        gap: 15px !important; 
+        padding: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+    .footer-box { 
+        width: 100% !important; 
+        max-width: 300px !important; /* ورود باکس‌های فوتر به محدوده مستطیل هم‌تراز */
+        margin: 0 auto !important; 
+        padding: 20px !important; 
+    }
+    .stats-box { 
+        display: grid !important; 
+        grid-template-columns: repeat(2, 1fr) !important; 
+        justify-items: center !important; 
+        gap: 20px 10px !important; 
+    }
+    .btn-cta { width: 100% !important; border-radius: 8px !important; padding: 10px 0 !important; }
+    .brands-list { flex-wrap: wrap !important; gap: 15px !important; }
+
+    /* ۷. نوار حقوق و وضعیت سرور در پایین‌ترین بخش */
+    .bottom-bar { 
+        flex-direction: column !important; 
+        gap: 12px !important; 
+        text-align: center !important; 
+        padding-top: 15px !important; 
+        width: 100% !important;
+        max-width: 300px !important;
+        margin: 25px auto 0 auto !important;
+    }
+}
