@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سایر خدمات - Espyr Cloud</title>
+    <!-- اتصال به استایل بهینه‌شده و ۱۰۰٪ ریسپانسیو شما -->
+    <link rel="stylesheet" href="./assets/css/aboutus.css">
+    <!-- Android / Chrome PWA -->
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#0b0e11" />
+</head>
+<body>
+
+    <!-- ۱. هدر سایت (Navbar) کاملاً مستقل -->
+    <header class="navbar">
+        <div class="nav-right">
+            <!-- متن خالص لوگو مطابق الگو دسکتاپ و موبایل شما -->
+            <div class="logo">
+                ESPYR CLOUD
+            </div>
+            <nav class="menu">
+                <a href="shared-host.html">هاست</a>
+                <a href="vps.html">سرور مجازی</a>
+                <a href="dedicated.html">سرور اختصاصی</a>
+                <a href="colocation.html">کولوکیشن</a>
+                <a href="domain.html">ثبت دامنه</a>
+                <a href="aboutus.html" class="active">درباره ما</a>
+                <a href="#">تماس با ما</a>
+            </nav>
+        </div>
+        <div class="nav-left">
+            <button class="btn-register">ثبت نام</button>
+            <button class="btn-login">ورود به پنل</button>
+        </div>
+    </header>
+
+    <!-- مسیر راهنمای صفحه تراز شده در راست -->
+    <div class="breadcrumb">
+        <a href="index.html">خانه</a>  /  سایر خدمات
+    </div>
+
+    <!-- ۲. بخش هیرو اختصاصی سایر خدمات -->
+    <section class="hero-aboutus">
+        <div class="hero-text-aboutus">
+            <h1>سایر خدمات</h1>
+            <h2 class="sub-title-blue">هر آنچه برای کسب‌وکار آنلاین نیاز دارید</h2>
+            <p>مجموعه‌ای کامل از خدمات مکمل برای مدیریت بهتر و باتجربه‌تر حرفه‌ای در وب‌سایت و زیرساخت‌های شما.</p>
+        </div>
+
+        <div class="hero-image-aboutus">
+            <img src="./assets/images/aboutus-hero.png" alt="Other Services Blocks">
+        </div>
+    </section>
+
+    <!-- ۳. کانتینر ۸ کارت خدمات فرعی متصل به جاوا اسکریپت -->
+    <section class="services-grid-container" id="services-grid-cards"></section>
+
+    <!-- اتصال اسکریپت لود داینامیک قیمت‌ها -->
+    <script src="./assets/js/aboutus.js"></script>
+</body>
+</html>
