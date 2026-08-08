@@ -1,0 +1,59 @@
+{
+  "plans": [
+    {
+      "id": "co-location",
+      "title": "کولوکیشن",
+      "price": "890,000",
+      "period": "تومان / ماهانه",
+      "features": ["فضای رک اختصاصی", "برق و اینترنت پایدار", "پشتیبانی 24/7"],
+      "badge": "",
+      "icon": "fa-solid fa-server",
+      "btnClass": "btn-orange",
+      "btnText": "مشاهده پلن‌ها"
+    },
+    {
+      "id": "dedicated",
+      "title": "سرور اختصاصی",
+      "price": "1,490,000",
+      "period": "تومان / ماهانه",
+      "features": ["سخت‌افزار قدرتمند", "ترافیک نامحدود", "1Gbps / 10Gbps"],
+      "badge": "",
+      "icon": "fa-solid fa-cubes",
+      "btnClass": "btn-green",
+      "btnText": "مشاهده پلن‌ها"
+    },
+    {
+      "id": "vps",
+      "title": "سرور مجازی (VPS)",
+      "price": "199,000",
+      "period": "تومان / ماهانه",
+      "features": ["منابع اختصاصی", "هارد پرسرعت", "نصب آنی"],
+      "badge": "پرفروش‌ترین",
+      "icon": "fa-solid fa-cloud",
+      "btnClass": "btn-blue",
+      "btnText": "مشاهده پلن‌ها"
+    },
+    {
+      "id": "shared",
+      "title": "هاست اشتراکی",
+      "price": "59,000",
+      "period": "تومان / ماهانه",
+      "features": ["فضای نامحدود SSD", "ترافیک نامحدود", "SSL رایگان"],
+      "badge": "",
+      "icon": "fa-solid fa-database",
+      "btnClass": "btn-purple",
+      "btnText": "مشاهده پلن‌ها"
+    },
+    {
+      "id": "domain",
+      "title": "ثبت دامنه",
+      "price": "99,000",
+      "period": "تومان / سالانه",
+      "features": [".ir  .com  .net  .org"],
+      "badge": "",
+      "icon": "fa-solid fa-globe",
+      "btnClass": "btn-outline-blue",
+      "btnText": "جستجوی دامنه"
+    }
+  ]
+}
