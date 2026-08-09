@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ip",
+    "icon": "fa-solid fa-network-wired",
+    "title": "IP اختصاصی",
+    "desc": "IPv4 / IPv6",
+    "price": "59,000 تومان"
+  },
+  {
+    "id": "cdn",
+    "icon": "fa-solid fa-circle-nodes",
+    "title": "CDN",
+    "desc": "سرعت و امنیت بیشتر",
+    "price": "99,000 تومان"
+  },
+  {
+    "id": "backup",
+    "icon": "fa-solid fa-shield-halved",
+    "title": "بکاپ و ریستور",
+    "desc": "بکاپ خودکار و دستی",
+    "price": "69,000 تومان"
+  },
+  {
+    "id": "ssl",
+    "icon": "fa-solid fa-lock",
+    "title": "گواهینامه SSL",
+    "desc": "انواع SSL معتبر",
+    "price": "310,000 تومان"
+  },
+  {
+    "id": "design",
+    "icon": "fa-solid fa-laptop-code",
+    "title": "طراحی سایت",
+    "desc": "سایت حرفه‌ای",
+    "price": "قیمت توافقی"
+  },
+  {
+    "id": "monitor",
+    "icon": "fa-solid fa-eye",
+    "title": "مانیتورینگ",
+    "desc": "پایش 24/7",
+    "price": "99,000 تومان"
+  },
+  {
+    "id": "email",
+    "icon": "fa-solid fa-envelope",
+    "title": "ایمیل سازمانی",
+    "desc": "ایمیل حرفه‌ای",
+    "price": "49,000 تومان"
+  },
+  {
+    "id": "license",
+    "icon": "fa-solid fa-key",
+    "title": "لایسنس ها",
+    "desc": "لایسنس نرم‌افزارها",
+    "price": "قیمت توافقی"
+  }
+]
