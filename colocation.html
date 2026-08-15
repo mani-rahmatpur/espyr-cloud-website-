@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>کولوکیشن - Espyr Cloud</title>
+    <!-- لود صحیح کیت آیکون فونت‌آوسم برای دکمه همبرگری موبایل -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <!-- اتصال به استایل بهینه‌شده و ۱۰۰٪ ریسپانسیو شما -->
+    <link rel="stylesheet" href="./assets/css/colocation.css">
+</head>
+<body>
+
+    <!-- ۱. هدر مشترک سایت کاملاً مستقل -->
+    <header class="navbar">
+        <div class="nav-right">
+            <!-- متن خالص لوگو مطابق الگو درخواستی شما -->
+            <div class="logo">
+                ESPYR CLOUD
+            </div>
+            
+            <!-- دکمه همبرگری موبایل -->
+            <button class="menu-toggle" id="mobile-menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <nav class="menu" id="nav-menu-links">
+                <a href="shared-host.html">هاست</a>
+                <a href="vps.html">سرور مجازی</a>
+                <a href="dedicated.html">سرور اختصاصی</a>
+                <a href="colocation.html" class="active">کولوکیشن</a>
+                <a href="domain.html">ثبت دامنه</a>
+                <a href="aboutus.html">درباره ما</a>
+                <a href="#">تماس با ما</a>
+            </nav>
+        </div>
+        <div class="nav-left">
+            <button class="btn-register">ثبت نام</button>
+            <button class="btn-login">ورود به پنل</button>
+        </div>
+    </header>
+
+    <!-- مسیر راهنمای صفحه تراز شده در راست -->
+    <div class="breadcrumb">
+        <a href="index.html">خانه</a> / کولوکیشن
+    </div>
+
+    <!-- ۲. بخش هیرو اختصاصی کولوکیشن -->
+    <section class="hero-colocation">
+        <div class="hero-text-colocation">
+            <h1>کولوکیشن سرور <span>میزبانی سرورهای شما در امن‌ترین دیتاسنترها</span></h1>
+            <p>با خدمات کولوکیشن، سرورهای سخت‌افزاری خود را در رک‌های اختصاصی ما در معتبرترین دیتاسنترها قرار دهید و از برق اضطراری، سیستم سرمایش استاندارد و پهنای باند پرسرعت بهره‌مند شوید.</p>
+            
+            <!-- نوار ویژگی‌های ۴ تایی هیرو با آدرس‌دهی جدید پوشه colocation و فرمت SVG -->
+            <div class="colocation-features-bar">
+                <div class="bar-item">
+                    <img src="./assets/images/colocation/power.svg" alt="برق دیتاسنتر" class="features-bar-icon">
+                    <div class="bar-item-text">
+                        <h4>برق دیتاسنتر</h4>
+                        <p>پشتیبانی بدون قطعی</p>
+                    </div>
+                </div>
+                <div class="bar-item">
+                    <img src="./assets/images/colocation/security.svg" alt="امنیت فیزیکی" class="features-bar-icon">
+                    <div class="bar-item-text">
+                        <h4>امنیت فیزیکی</h4>
+                        <p>کنترل تردد و مانیتورینگ</p>
+                    </div>
+                </div>
+                <div class="bar-item">
+                    <img src="./assets/images/colocation/support.svg" alt="پشتیبانی" class="features-bar-icon">
+                    <div class="bar-item-text">
+                        <h4>پشتیبانی فنی</h4>
+                        <p>حضور ۲۴ ساعته متخصصین</p>
+                    </div>
+                </div>
+                <div class="bar-item">
+                    <img src="./assets/images/colocation/network.svg" alt="پهنای باند" class="features-bar-icon">
+                    <div class="bar-item-text">
+                        <h4>پهنای باند</h4>
+                        <p>اتصال شبکه پایدار</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-image-colocation">
+            <img src="./assets/images/colocation-hero.png" alt="Colocation Datacenter">
+        </div>
+    </section>
+
+    <!-- عنوان جدول پلن‌ها -->
+    <div class="section-title">
+        <h2>پلن‌های میزبانی سرور (کولوکیشن)</h2>
+    </div>
+
+    <!-- ۳. کانتینر ۵ کارت پلن‌های داینامیک متصل به جاوا اسکریپت -->
+    <section class="colocation-pricing-container" id="colocation-cards"></section>
+
+    <!-- ۴. بخش ویژگی‌های ۴ گانه پایینی با آدرس‌دهی جدید پوشه colocation و فرمت SVG -->
+    <section class="colocation-bottom-features">
+        <div class="colocation-bottom-item">
+            <img src="./assets/images/colocation/cooling.svg" alt="سرمایش" class="bottom-feat-icon">
+            <div>
+                <h4>سیستم سرمایش</h4>
+                <p>کنترل دقیق دما و رطوبت</p>
+            </div>
+        </div>
+        <div class="colocation-bottom-item">
+            <img src="./assets/images/colocation/fire.svg" alt="اطفای حریق" class="bottom-feat-icon">
+            <div>
+                <h4>اطفای حریق</h4>
+                <p>سیستم حسگر پیشرفته</p>
+            </div>
+        </div>
+        <div class="colocation-bottom-item">
+            <img src="./assets/images/colocation/generator.svg" alt="ژنراتور" class="bottom-feat-icon">
+            <div>
+                <h4>پشتیبان ژنراتور</h4>
+                <p>تضمین پایداری انرژی</p>
+            </div>
+        </div>
+        <div class="colocation-bottom-item">
+            <img src="./assets/images/colocation/lock.svg" alt="قفل اختصاصی" class="bottom-feat-icon">
+            <div>
+                <h4>قفل اختصاصی</h4>
+                <p>امکان سفارش کیج و رک قفل‌دار</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- اسکریپت منوی موبایل -->
+    <script>
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const menuLinks = document.getElementById('nav-menu-links');
+        if(menuBtn && menuLinks) {
+            menuBtn.addEventListener('click', () => {
+                menuLinks.classList.toggle('active');
+            });
+        }
+    </script>
+    <!-- ۵. اتصال اسکریپت لود داینامیک قیمت‌ها -->
+    <script src="./assets/js/colocation.js"></script>
+</body>
+</html>
