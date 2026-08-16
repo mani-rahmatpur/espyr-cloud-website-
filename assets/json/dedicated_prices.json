@@ -1,0 +1,67 @@
+[
+  {
+    "id": "ds-1",
+    "title": "DS-1",
+    "price": "2,490,000",
+    "period": "تومان / ماهانه",
+    "badge": "",
+    "features": [
+      "CPU Intel E3-1230 v6",
+      "RAM 16GB DDR4",
+      "2x 480GB SSD",
+      "1Gbps Port"
+    ]
+  },
+  {
+    "id": "ds-2",
+    "title": "DS-2",
+    "price": "3,990,000",
+    "period": "تومان / ماهانه",
+    "badge": "",
+    "features": [
+      "CPU E5-2620 v4",
+      "RAM 32GB DDR4",
+      "2x 960GB SSD",
+      "1Gbps Port"
+    ]
+  },
+  {
+    "id": "ds-3",
+    "title": "DS-3",
+    "price": "6,490,000",
+    "period": "تومان / ماهانه",
+    "badge": "محبوب",
+    "features": [
+      "CPU 2x E5-2680 v4",
+      "RAM 64GB DDR4",
+      "2x 1.92TB SSD",
+      "1Gbps Port"
+    ]
+  },
+  {
+    "id": "ds-4",
+    "title": "DS-4",
+    "price": "9,990,000",
+    "period": "تومان / ماهانه",
+    "badge": "",
+    "features": [
+      "CPU 2x Gold 6138R",
+      "RAM 128GB DDR4",
+      "2x 1.92TB SSD",
+      "10Gbps Port"
+    ]
+  },
+  {
+    "id": "ds-5",
+    "title": "DS-5",
+    "price": "13,990,000",
+    "period": "تومان / ماهانه",
+    "badge": "",
+    "features": [
+      "CPU 2x Gold 6248R",
+      "RAM 192GB DDR4",
+      "2x 3.84TB SSD",
+      "10Gbps Port"
+    ]
+  }
+]
