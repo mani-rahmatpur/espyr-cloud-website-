@@ -1,0 +1,38 @@
+[
+  {
+    "id": "com",
+    "title": ".com",
+    "price": "950,000",
+    "period": "تومان"
+  },
+  {
+    "id": "ir",
+    "title": ".ir",
+    "price": "330,000",
+    "period": "تومان"
+  },
+  {
+    "id": "net",
+    "title": ".net",
+    "price": "1,050,000",
+    "period": "تومان"
+  },
+  {
+    "id": "org",
+    "title": ".org",
+    "price": "1,100,000",
+    "period": "تومان"
+  },
+  {
+    "id": "store",
+    "title": ".store",
+    "price": "1,200,000",
+    "period": "تومان"
+  },
+  {
+    "id": "co",
+    "title": ".co",
+    "price": "1,300,000",
+    "period": "تومان"
+  }
+]
