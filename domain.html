@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espyr Cloud - جستجو و ثبت دامنه</title>
+    <!-- لود صحیح کیت آیکون فونت‌آوسم برای دکمه همبرگری موبایل -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <!-- آدرس فایل سی‌اس‌اس اختصاصی و ۱۰۰٪ ریسپانسیو شده شما -->
+    <link rel="stylesheet" href="./assets/css/domain.css">
+    <!-- Android / Chrome PWA -->
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#0b0e11" />
+</head>
+<body>
+
+    <!-- ۱. هدر مشترک سایت کاملاً مستقل -->
+    <header class="navbar">
+        <div class="nav-right">
+            <!-- متن خالص لوگو مطابق الگو درخواستی شما -->
+            <div class="logo">
+                ESPYR CLOUD
+            </div>
+            
+            <!-- دکمه همبرگری موبایل -->
+            <button class="menu-toggle" id="mobile-menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <nav class="menu" id="nav-menu-links">
+                <a href="shared-host.html">هاست</a>
+                <a href="vps.html">سرور مجازی</a>
+                <a href="dedicated.html">سرور اختصاصی</a>
+                <a href="colocation.html">کولوکیشن</a>
+                <a href="domain.html" class="active">ثبت دامنه</a>
+                <a href="aboutus.html">درباره ما</a>
+                <a href="#">تماس با ما</a>
+            </nav>
+        </div>
+        <div class="nav-left">
+            <button class="btn-register">ثبت نام</button>
+            <button class="btn-login">ورود به پنل</button>
+        </div>
+    </header>
+
+    <!-- مسیر راهنمای صفحه تراز شده در راست -->
+    <div class="breadcrumb">
+        <a href="index.html">خانه</a> / ثبت دامنه
+    </div>
+
+    <!-- ۲. بخش هیرو اختصاصی ثبت دامنه -->
+    <section class="hero-domain">
+        <div class="hero-text-domain">
+            <h1>ثبت دامنه</h1>
+            <h2 class="sub-title-blue">نام مناسب، شروع برند شما</h2>
+            <p>دامنه مورد نظر خود را جستجو و با بهترین قیمت ثبت کنید. مدیریت آسان و لایت اسپید خودکار دامنه‌ها.</p>
+        </div>
+        <div class="hero-image-domain">
+            <img src="./assets/images/domain-hero.PNG" alt="Domain World Network">
+        </div>
+    </section>
+
+    <!-- ۳. کانتینر ۶ کارت قیمت‌گذاری پسوندها متصل به جاوا اسکریپت -->
+    <section class="domain-pricing-container" id="domain-cards"></section>
+
+    <!-- ۴. باکس جستجوی بزرگ وسط صفحه -->
+    <section class="main-search-wrapper">
+        <div class="search-title">جستجوی دامنه</div>
+        <div class="big-search-bar">
+            <button id="btn-main-search">جستجو</button>
+            <div class="input-container">
+                <input type="text" id="main-domain-input" placeholder="نام دامنه مورد نظر خود را وارد کنید...">
+                <i class="fa-solid fa-xmark clear-icon"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- ۵. ویژگی‌های ۵ گانه با آدرس‌دهی جدید پوشه domain و فرمت SVG -->
+    <section class="domain-bottom-features">
+        <div class="domain-bottom-item">
+            <img src="./assets/images/domain/support.svg" alt="پشتیبانی" class="domain-feat-svg">
+            <div>
+                <h4>پشتیبانی 7/24</h4>
+                <p>در تمام مراحل</p>
+            </div>
+        </div>
+
+        <div class="domain-bottom-item">
+            <img src="./assets/images/domain/transfer.svg" alt="انتقال" class="domain-feat-svg">
+            <div>
+                <h4>انتقال رایگان</h4>
+                <p>دامنه‌ها</p>
+            </div>
+        </div>
+
+        <div class="domain-bottom-item">
+            <img src="./assets/images/domain/dns.svg" alt="مدیریت" class="domain-feat-svg">
+            <div>
+                <h4>مدیریت DNS</h4>
+                <p>سریع و آسان</p>
+            </div>
+        </div>
+
+        <div class="domain-bottom-item">
+            <img src="./assets/images/domain/privacy.svg" alt="خصوصی" class="domain-feat-svg">
+            <div>
+                <h4>حریم خصوصی</h4>
+                <p>WHOIS Protection</p>
+            </div>
+        </div>
+
+        <div class="domain-bottom-item">
+            <img src="./assets/images/domain/renew.svg" alt="تمدید" class="domain-feat-svg">
+            <div>
+                <h4>تمدید خودکار</h4>
+                <p>بدون نگرانی</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ۶. باکس نوار پایانی همراه با دکمه ابی کپسولی -->
+    <section class="all-extensions-bar">
+        <span>به دنبال پسوند خاصی هستید؟</span>
+        <button class="btn-all-ext">مشاهده همه پسوندها</button>
+    </section>
+
+    <!-- اسکریپت منوی موبایل -->
+    <script>
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const menuLinks = document.getElementById('nav-menu-links');
+        if(menuBtn && menuLinks) {
+            menuBtn.addEventListener('click', () => {
+                menuLinks.classList.toggle('active');
+            });
+        }
+    </script>
+    <!-- اتصال اسکریپت لود داینامیک قیمت‌ها -->
+    <script src="./assets/js/domain.js"></script>
+</body>
+</html>
