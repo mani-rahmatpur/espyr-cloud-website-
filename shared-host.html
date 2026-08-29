@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>هاست اشتراکی حرفه‌ای - Espyr Cloud</title>
+    <!-- لود صحیح کیت آیکون فونت‌آوسم برای دکمه همبرگری موبایل -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <!-- آدرس فایل سی‌اس‌اس اختصاصی و ریسپانسیو شده شما -->
+    <link rel="stylesheet" href="./assets/css/shared-host.css">
+</head>
+<body>
+
+    <!-- ۱. هدر مشترک سایت کاملاً مستقل -->
+    <header class="navbar">
+        <div class="nav-right">
+            <!-- متن خالص لوگو مطابق الگو درخواستی شما -->
+            <div class="logo">
+                ESPYR CLOUD
+            </div>
+            
+            <!-- دکمه همبرگری موبایل -->
+            <button class="menu-toggle" id="mobile-menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <nav class="menu" id="nav-menu-links">
+                <a href="shared-host.html" class="active">هاست</a>
+                <a href="vps.html">سرور مجازی</a>
+                <a href="dedicated.html">سرور اختصاصی</a>
+                <a href="colocation.html">کولوکیشن</a>
+                <a href="domain.html">ثبت دامنه</a>
+                <a href="aboutus.html">درباره ما</a>
+                <a href="#">تماس با ما</a>
+            </nav>
+        </div>
+        <div class="nav-left">
+            <button class="btn-register">ثبت نام</button>
+            <button class="btn-login">ورود به پنل</button>
+        </div>
+    </header>
+
+    <!-- مسیر راهنمای صفحه تراز شده در راست -->
+    <div class="breadcrumb">
+        <a href="index.html">خانه</a> / هاست اشتراکی
+    </div>
+
+    <!-- ۲. بخش هیرو اختصاصی هاست اشتراکی -->
+    <section class="hero-shared">
+        <div class="hero-text-shared">
+            <h1>هاست اشتراکی <span>سرعت فوق‌العاده، کنترل‌پنل محبوب، بهینه شده برای وردپرس</span></h1>
+            <p>میزبانی وب با هاردهای پرسرعت NVMe و وب‌سرورهای لایت‌اسپید، انتخابی ایده‌آل و اقتصادی برای سایت‌های شرکتی، فروشگاهی و شخصی شما.</p>
+            
+            <!-- نوار ویژگی‌های ۴ تایی هیرو با آدرس‌دهی جدید پوشه shared-host و فرمت SVG -->
+            <div class="shared-features-bar">
+                <div class="bar-item">
+                    <img src="./assets/images/shared-host/litespeed.svg" alt="لایت اسپید" class="features-bar-icon">
+                    <div class="bar-item-text">
+                        <h4>وب‌سرور LiteSpeed</h4>
+                        <p>سرعت و راندمان بالا</p>
+                    </div>
+                </div>
+                <div class="bar-item">
+                    <img src="./assets/images/shared-host/ssl.svg" alt="امنیت" class="features-bar-icon">
+                    <div class="bar-item-text">
+                        <h4>SSL رایگان</h4>
+                        <p>امنیت کامل داده‌ها</p>
+                    </div>
+                </div>
+                <div class="bar-item">
+                    <img src="./assets/images/shared-host/wizard.svg" alt="نصب آسان" class="features-bar-icon">
+                    <div class="bar-item-text">
+                        <h4>نصب آسان</h4>
+                        <p>وردپرس تنها با یک کلیک</p>
+                    </div>
+                </div>
+                <div class="bar-item">
+                    <img src="./assets/images/shared-host/nvme.svg" alt="هارد" class="features-bar-icon">
+                    <div class="bar-item-text">
+                        <h4>هاردهای NVMe</h4>
+                        <p>سرعت لود بی‌نظیر</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-image-shared">
+            <img src="./assets/images/shared-hero.PNG" alt="Shared Hosting Server">
+        </div>
+    </section>
+
+    <!-- عنوان جدول پلن‌ها -->
+    <div class="section-title">
+        <h2>پلن‌های هاست اشتراکی مدرن</h2>
+    </div>
+
+    <!-- ۳. کانتینر ۵ کارت پلن‌های داینامیک متصل به جاوا اسکریپت -->
+    <section class="shared-pricing-container" id="shared-cards"></section>
+
+    <!-- ۴. بخش ویژگی‌های ۴ گانه پایینی با آدرس‌دهی جدید پوشه shared-host و فرمت SVG -->
+    <section class="shared-bottom-features">
+        <div class="shared-bottom-item">
+            <img src="./assets/images/shared-host/backup.svg" alt="بکاپ" class="bottom-feat-icon">
+            <div>
+                <h4>بکاپ روزانه</h4>
+                <p>ذخیره در سرور مجزا</p>
+            </div>
+        </div>
+        <div class="shared-bottom-item">
+            <img src="./assets/images/shared-host/cpanel.svg" alt="کنترل پنل" class="bottom-feat-icon">
+            <div>
+                <h4>کنترل پنل محبوب</h4>
+                <p>cPanel / DirectAdmin</p>
+            </div>
+        </div>
+        <div class="shared-bottom-item">
+            <img src="./assets/images/shared-host/email.svg" alt="ایمیل" class="bottom-feat-icon">
+            <div>
+                <h4>ایمیل اکانت</h4>
+                <p>نامحدود با دامنه شما</p>
+            </div>
+        </div>
+        <div class="shared-bottom-item">
+            <img src="./assets/images/shared-host/php.svg" alt="نسخه PHP" class="bottom-feat-icon">
+            <div>
+                <h4>انتخاب نسخه PHP</h4>
+                <p>پشتیبانی از ۵.۶ تا ۸.۳</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- اسکریپت منوی موبایل -->
+    <script>
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const menuLinks = document.getElementById('nav-menu-links');
+        if(menuBtn && menuLinks) {
+            menuBtn.addEventListener('click', () => {
+                menuLinks.classList.toggle('active');
+            });
+        }
+    </script>
+    <!-- ۵. اتصال اسکریپت لود داینامیک قیمت‌ها -->
+    <script src="./assets/js/shared-host.js"></script>
+</body>
+</html>
